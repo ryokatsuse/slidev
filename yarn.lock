@@ -75,7 +75,7 @@
   dependencies:
     pako "^1.0.10"
 
-"@slidev/cli@^0.19.8":
+"@slidev/cli@>=0.9", "@slidev/cli@^0.19.8":
   version "0.19.8"
   resolved "https://registry.yarnpkg.com/@slidev/cli/-/cli-0.19.8.tgz#cb006b9906913a6c880990ea76aa51dc4415e23a"
   integrity sha512-RtgXvm4kD0sIzKXj3TiGhLcsERHTNTzg4KbOvmUDj8oDREOGHNAXl/93U9ASQoMzkUhge8Sovj6y1XLXPQAySA==
@@ -156,7 +156,17 @@
     "@slidev/types" "0.19.8"
     js-yaml "^4.1.0"
 
-"@slidev/theme-default@*":
+"@slidev/theme-apple-basic@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@slidev/theme-apple-basic/-/theme-apple-basic-0.19.0.tgz#feace7a62d5bf80c11dce43b904e2788e6397f98"
+  integrity sha512-uPNwjZ80FISka+3pOHEFSWkAEa77BlEEWbYwIG5J7+BrjIRRLoUC1YJ47pLA4Tp3SMhAc6qhzB8Sy66HL4+QPg==
+  dependencies:
+    "@slidev/types" "^0.19.3"
+    codemirror-theme-vars "^0.1.1"
+    prism-theme-vars "^0.2.2"
+    theme-vitesse "^0.1.11"
+
+"@slidev/theme-default@*", "@slidev/theme-default@>=0.7":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@slidev/theme-default/-/theme-default-0.19.1.tgz#2862091deca5bab84d148f92f93d9f603edc0527"
   integrity sha512-SB98kdLzFevpKONZcIla5byQdTiIqaf+jKJi8Shy0pxUDT+aMpkfKq1yudgjnN9yt7E/NH7xB9menZHQov0zDw==
@@ -180,6 +190,11 @@
   version "0.19.8"
   resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.19.8.tgz#26d44ff4a9fa9733f9abff5afd27c0955beb45f1"
   integrity sha512-+4IttkrD+IqGhljLs+kF8ZxmhEYu4mvYIeeQwiwRtCn6LTxFBRlaNk9UfStMgCJimDCJkfmVpXUVMpxbFyvyeQ==
+
+"@slidev/types@^0.19.3":
+  version "0.19.9"
+  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.19.9.tgz#ed29b8f92b5bf501cbeb83f597e0a7e13ae9b580"
+  integrity sha512-hpQeTIUbCwTFOw5m1h5TuJkwJhpZ77VUIaI4PDUboB1Unk9jaNl9Ok0dvLMWN9vlsKmqeVxhkonXTWNKPUBHjQ==
 
 "@vitejs/plugin-vue@^1.2.3":
   version "1.2.3"
@@ -1714,6 +1729,14 @@ sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
+
+slidev-theme-geist@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/slidev-theme-geist/-/slidev-theme-geist-0.4.0.tgz#f722b417ded0f1b15a07d0ad35e76c8340e30cb6"
+  integrity sha512-Yc/bU3ndGaEDsi7ACeWqCZSxArVKgHsRN6SJaIiwdtFUw7Hkb6PYfmdeZUewxbAYYl+hAFb6kzTpynqqvuI6hA==
+  dependencies:
+    "@slidev/cli" ">=0.9"
+    "@slidev/theme-default" ">=0.7"
 
 slugify@^1.3.1:
   version "1.5.3"

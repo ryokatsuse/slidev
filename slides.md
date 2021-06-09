@@ -1,35 +1,23 @@
 ---
-# try also 'default' to start simple
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
+theme: geist
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+class: text-center
 highlighter: shiki
-# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
+title: さよならIE
+layout: center
 ---
 
-# Welcome to Slidev
+# さよならIE
 
-Presentation slides for developers
+　〜IEがいない世界線で使えるCSSの紹介〜
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
 
-<a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-  class="abs-br m-6 text-xl icon-btn opacity-50 !border-none !hover:text-white">
-  <carbon-logo-github />
-</a>
+
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -37,63 +25,56 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# What is Slidev?
+<div class="text-2xl">
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="mb-10">
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+# 自己紹介
 
-<br>
-<br>
+</div>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+- 🙋‍♂️ 勝瀬 亮(Ryo Katsuse)
+- 👉🏼 [@ryo__kts](https://twitter.com/ryo__kts)
+- 🏢 YUMEMI Inc.
+- 👨🏻‍💻 リードフロントエンドエンジニア
+- 🥰 Reactが大好きです！
+
+<div class="relative">
+<img
+  class="absolute -top-55 -right-0 w-80"
+  src="/assets/ryo_k.png"
+/>
+</div>
+</div>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 ---
 
-# Navigation
+<div class="text-center relative">
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+<h1 class="absolute left-70 top-40">皆さん！朗報です！！</h1>
 
-### Keyboard Shortcuts
+</div>
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+---
 
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+# IEサポート終了のお知らせ🎉🎉
 
+- 2022年 6月 15日をもってサポートを終了すると発表！
+
+<div class="flex justify-center">
+  <img
+    class="w-100"
+    src="/assets/ietoedge.png"
+  />
+</div>
+
+https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/
 ---
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
