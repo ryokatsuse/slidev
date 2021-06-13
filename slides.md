@@ -14,7 +14,9 @@ layout: center
 
 # さよならIE
 
-　〜IEがいない世界線で使えるCSSの紹介〜
+　〜IEがない世界線で使えるCSSの紹介〜
+
+2021/06/18
 
 
 
@@ -54,12 +56,10 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 
 ---
+layout: center
+---
 
-<div class="text-center relative">
-
-<h1 class="absolute left-70 top-40">皆さん！朗報です！！</h1>
-
-</div>
+# 皆さん！朗報です！！
 
 ---
 
@@ -75,233 +75,331 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 </div>
 
 https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly!
-
-<!-- https://sli.dev/guide/syntax.html#line-highlighting -->
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = {...user, ...update}  
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
 ---
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-
----
-class: px-20
+layout: center
 ---
 
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div 
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-2 gap-4 pt-4 -mb-6">
-
-```mermaid {scale: 0.9}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+# 「IE対応」という言葉を聞いて思い浮かぶこと🤔
 
 
 ---
 layout: center
-class: text-center
 ---
 
-# Learn More
+<div v-click class="absolute top-12 left-30 text-3xl rounded-4xl">つらい</div>
+<div v-click class="absolute top-17 right-12 text-3xl rounded-full">なんか分かんないけど崩れてる</div>
+<div v-click class="absolute top-30 left-80 text-3xl rounded-full">やりたくない</div>
+<div v-click class="absolute top-50 right-20 text-3xl rounded-full">大量のBabelポリフィル</div>
+<div v-click class="absolute top-60 left-50 text-3xl rounded-full">レガシー</div>
+<div v-click class="absolute bottom-12 right-30 text-3xl rounded-full">動作確認したくない</div>
+<div v-click class="absolute bottom-30 left-20 text-3xl rounded-full">Chromeだと崩れてないのに何故。。。</div>
 
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+<h1 v-click class="text-8xl">😵</h1>
+
+
+
+
+---
+
+# IEとの戦い
+
+- 😇 サポートされていないCSSに対してベンダープレフィックスを付けてた(```ms-*```)
+- 🤕 IEの特定のバージョンだけに適用したCSSのメディアクエリを追加していた。
+
+```css
+
+.hoge {
+  display: flex;
+}
+
+@media all and (-ms-high-contrast:none){
+  *::-ms-backdrop, .hoge { display: block } /* IE11のみに適用されたCSS */
+}
+
+```
+
+- 😭 過去には条件付きコメントなんてものもあった・・・
+
+```html
+<!-- IE9にしか適用されないCSS -->
+<!--[if IE 9]>
+<link rel="stylesheet" href="xxx.css" />
+<![endif]-->
+
+```
+
+<style>
+
+pre {
+  border: none;
+}
+
+</style>
+
+---
+layout: center
+---
+# 今日紹介するCSSたち
+
+---
+
+<div class="text-xl">
+
+# IEがない世界線で使えるCSS
+
+- flex-gap
+- filter
+- aspect-ratio
+- clip-path
+- position-sticky
+- line-clamp
+
+### 他にも沢山ありますが、すぐに現場で使えそうなCSSを紹介します！
+
+</div>
+
+
+---
+layout: default
+---
+
+# flex-gap
+
+- 
+
+<div grid="~ cols-2 gap-4">
+
+<div>
+
+- 🎊 行、列の余白を定義できる
+- 🎁 カラムレイアウトの余白を簡単に実装できる！
+- 👇👇 デモします！
+- https://codepen.io/ryokatsuse/pen/eYvPNRx
+
+
+</div>
+
+<div>
+
+- サンプルコード
+
+```css
+.img{
+  display: flex;
+  gap: 30px;
+}
+```
+</div>
+
+</div>
+
+
+<style>
+
+pre {
+  border: none;
+}
+
+</style>
+
+---
+layout: default
+---
+
+# filter
+
+
+<div grid="~ cols-2 gap-4">
+
+<div>
+
+- 😻 要素に様々な効果を加えることができる
+- 😼 ぼかし、彩度、明度の変更などが可能！
+
+- 👇👇 サンプルコード
+- https://codepen.io/ryokatsuse/pen/poexPYG
+
+
+</div>
+
+<div>
+<video class="-top-4 relative" src="/assets/filter.mp4" controls autoplay></video>
+</div>
+
+
+</div>
+
+
+---
+layout: default
+---
+# aspect-ratio
+
+<div grid="~ cols-2 gap-4">
+
+<div>
+
+- アスペクト比を明示的に書くことで要素を表示できます。
+- Safariでは15から対応します。
+- レイアウトシフト（ガタツキ）を防ぐことができます。
+
+#### 従来のアスペクト比計算方法
+
+| アスペクト比 | 計算                |
+| ------------ | ------------------- |
+| 16:9         | 9/16 * 100 = 56.25% |
+| 4:3          | 3/4 * 100 = 75%     |
+| 3:2          | 2/3 * 100 = 66.67%  |
+| 2:1          | 1/2 * 100 = 50%     |
+
+</div>
+
+<div>
+
+<video src="https://storage.googleapis.com/web-dev-assets/aspect-ratio/gridimages2.mp4" controls autoplay></video>
+
+参考：https://web.dev/aspect-ratio/
+
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# サンプルコード
+
+- 以下のようなHTMLを想定
+
+```html
+<div class="aspect-ratio-block"></div>
+```
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+- IE時代
+
+```css
+.aspect-ratio-block {
+  position: relative;
+  background: #999;
+  width: 50%;
+}
+
+.aspect-ratio-block::before {
+  content:"";
+  display: block;
+  padding-top: 56.25%; /* 16:9のアスペクト比を計算した値を書く */
+}
+```
+</div>
+
+<div>
+
+- モダンブラウザ時代
+
+```css
+.aspect-ratio-block{
+  width: 100%;
+  aspect-ratio: 16 / 9;　/* 明示的に書ける！ */
+}
+```
+
+</div>
+
+
+</div>
+
+<style>
+
+pre {
+  border: none;
+}
+
+</style>
+
+---
+
+# iframeでも使えます。
+
+- Google Mapの埋め込みなどをいい感じにレイアウトできます。
+- サンプルコード
+- https://codepen.io/ryokatsuse/pen/mdWQmmV
+
+---
+layout: default
+---
+# clip-path
+
+- 要素をクリッピング（切り抜き）ができる！
+- PhotoshopとかでやっていたことがCSSで表現できる！
+- このジェネレータで色々試すことができます！
+
+
+https://bennettfeely.com/clippy/
+
+
+---
+layout: default
+---
+# 図形どうやって作ってた？？
+
+
+- clip-pathで実装しない場合はborder,width,heightなどを駆使して頑張って作っていた。
+- そのためCSSの記述量も増えがちだった。。。
+
+- 例）三角形の作り方
+
+```css
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #dd0000;
+}
+
+```
+
+参照: [[CSS]CSS で円形、三角形、台形、星形 などを表現する方法のまとめ](https://www.webantena.net/css/css3-circle-ttriangle-trapezoid-star/)
+
+---
+layout: default
+---
+
+
+# position-sticky
+
+- 
+
+---
+
+
+# line-clamp
+
+- 
+
+---
+# まとめ
+- IE対応は辛い。
+- 今までハックな書き方をしていた部分がなくなる
+- 表現できる自由度が更に増えることで様々なUIを作ることができるようになる
+
+---
+# まとめ
+
+- IE対応は辛い。
+- 今までハックな書き方をしていた部分がなくなる
+- 表現できる自由度が更に増えることで様々なUIを作ることができるようになる
+
+---
+# 最後に
+
+---
+
+# 最後に
+
