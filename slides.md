@@ -17,6 +17,7 @@ layout: center
 　〜IEがない世界線で使えるCSSの紹介〜
 
 2021/06/18
+技育CAMP 勉強会
 
 
 
@@ -40,13 +41,8 @@ The last comment block of each slide will be treated as slide notes. It will be 
 - 🏢 YUMEMI Inc.
 - 👨🏻‍💻 リードフロントエンドエンジニア
 - 🥰 Reactが大好きです！
+- 🤩 好きなCSSプロパティはGridです！
 
-<div class="relative">
-<img
-  class="absolute -top-55 -right-0 w-80"
-  src="/assets/ryo_k.png"
-/>
-</div>
 </div>
 
 <!--
@@ -175,7 +171,7 @@ layout: default
 
 - 🎊 行、列の余白を定義できる
 - 🎁 カラムレイアウトの余白を簡単に実装できる！
-- 👇👇 デモします！
+- 👇👇 サンプルコード
 - https://codepen.io/ryokatsuse/pen/eYvPNRx
 
 
@@ -241,9 +237,9 @@ layout: default
 
 <div>
 
-- アスペクト比を明示的に書くことで要素を表示できます。
-- Safariでは15から対応します。
-- レイアウトシフト（ガタツキ）を防ぐことができます。
+- 🤴🏼 アスペクト比を明示的に書くことで要素を表示できます。
+- 🎤 Safariでは15から対応します。
+- 🙆‍♂️ レイアウトシフト（ガタツキ）を防ぐことができます。
 
 #### 従来のアスペクト比計算方法
 
@@ -326,8 +322,8 @@ pre {
 
 # iframeでも使えます。
 
-- Google Mapの埋め込みなどをいい感じにレイアウトできます。
-- サンプルコード
+- 🗺 Google Mapの埋め込みなどをいい感じにレイアウトできます。
+- 👇👇 サンプルコード
 - https://codepen.io/ryokatsuse/pen/mdWQmmV
 
 ---
@@ -335,9 +331,9 @@ layout: default
 ---
 # clip-path
 
-- 要素をクリッピング（切り抜き）ができる！
-- PhotoshopとかでやっていたことがCSSで表現できる！
-- このジェネレータで色々試すことができます！
+- ✂️ 要素をクリッピング（切り抜き）ができる！
+- 🖋 PhotoshopとかでやっていたことがCSSで表現できる！
+- 👇👇　以下のジェネレータで色々試すことができます！
 
 
 https://bennettfeely.com/clippy/
@@ -349,8 +345,8 @@ layout: default
 # 図形どうやって作ってた？？
 
 
-- clip-pathで実装しない場合はborder,width,heightなどを駆使して頑張って作っていた。
-- そのためCSSの記述量も増えがちだった。。。
+- 🤦‍♂️ clip-pathで実装しない場合はborder,width,heightなどを駆使して頑張って作っていた。
+- 🤦‍♂️🤦‍♂️ そのためCSSの記述量も増えがちだった。。。
 
 - 例）三角形の作り方
 
@@ -367,6 +363,15 @@ layout: default
 
 参照: [[CSS]CSS で円形、三角形、台形、星形 などを表現する方法のまとめ](https://www.webantena.net/css/css3-circle-ttriangle-trapezoid-star/)
 
+<style>
+
+pre {
+  border: none;
+}
+
+</style>
+
+
 ---
 layout: default
 ---
@@ -374,13 +379,45 @@ layout: default
 
 # position-sticky
 
+<div grid="~ cols-2 gap-4">
+
+<div>
+
+- 指定場所に固定しつつ指定位置になったらフロートさせることができる！
+- 追従ヘッダー、追従フッターなどが簡単に実装できる。
+- スクロール効果のようなUIが実装できる。
+- IE対応をする場合はJavaScriptを駆使してそれっぽく実装する必要がある。。
+
+</div>
+
+<div>
+
+<div class="container mx-auto w-20rem">
+  <video src="/assets/sticky.mp4" controls autoplay></video>
+</div>
+
+</div>
+</div>
+
+---
+layout: default
+---
+
+# 注意事項
+- position: sticky;を指定している要素はスティッキーアイテムになる。
+- スティッキーアイテムの親要素は自動的にスティッキーコンテナになる。
+- position: sticky;はスティッキーコンテナでしかフロートすることができない！
+
+
+- 👇👇 サンプルコード
 - 
+https://codepen.io/ryokatsuse/pen/zYZMaje
 
 ---
 
-
 # line-clamp
 
+- 3点リーダーをCSSのみで実現できる！
 - 
 
 ---
