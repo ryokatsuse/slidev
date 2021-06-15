@@ -95,10 +95,9 @@ layout: center
 <h1 v-click class="text-8xl">😵</h1>
 
 
-
-
 ---
-
+layout: default
+---
 # IEとの戦い
 
 - 😇 サポートされていないCSSに対してベンダープレフィックスを付けてた(```ms-*```)
@@ -137,6 +136,14 @@ pre {
 ---
 layout: center
 ---
+
+<h1 class="content-center">今日の目的</h1>
+
+## IEがなくなった後に利用できるCSSを学んで今から備えよう！！
+
+---
+layout: center
+---
 # 今日紹介するCSSたち
 
 ---
@@ -145,12 +152,12 @@ layout: center
 
 # IEがない世界線で使えるCSS
 
-- flex-gap
-- filter
-- aspect-ratio
-- clip-path
-- position-sticky
-### 他にも沢山ありますが、すぐに現場で使えそうなCSSを紹介します！
+-  👉 flex-gap
+-  👉 filter
+-  👉 aspect-ratio
+-  👉 clip-path
+-  👉 position-sticky
+####  他にも沢山ありますが、すぐに現場で使えそうなCSSを紹介します！
 
 </div>
 
