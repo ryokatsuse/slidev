@@ -426,7 +426,7 @@ layout: default
 
 - 🎊 2022年6月15日にIEのサポートが終了する。
 - 😡 IE対応する場合は、CSSをハックする必要があった。
-- 😊 filter、position-stickyなど、表現できる自由度が増えることで、様々なUIを作ることができるようになる
+- 😊 filter、position-stickyなどCSSをハックせず表現できることが増えた。
 
 ### CSS Working Group
 
