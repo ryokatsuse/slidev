@@ -16,8 +16,13 @@ layout: center
 
 　〜IEがない世界線で使えるCSSの紹介〜
 
-2021/06/16
-技育CAMP 勉強会
+~~2021/06/16
+技育CAMP 勉強会~~
+
+2021/07/29
+フロントエンドLT会 #002
+
+
 
 
 
@@ -38,8 +43,6 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 - 🙋‍♂️ 勝瀬 亮(Ryo Katsuse)
 - 👉🏼 [@ryo__kts](https://twitter.com/ryo__kts)
-- 🏢 YUMEMI Inc.
-- 👨🏻‍💻 リードフロントエンドエンジニア
 - 🥰 Reactが大好きです！
 - 🤩 好きなCSSプロパティはGridです！
 
@@ -439,3 +442,15 @@ layout: center
 ---
 
 ## ご清聴ありがとうございました🙇‍♂️
+
+
+
+
+本日のスライドは[Slidev](https://sli.dev/)というツールを使っています！
+
+Vue3+Vite+WindiCSSというモダン技術で構成されているので気になる方は使ってみてね！
+
+使用した感想は[ブログ](https://ryokatsu.dev/blog/2021/0619/)にも書いたので良かったら見てね！
+
+
+
